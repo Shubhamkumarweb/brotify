@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brotify</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+    <header><img src="img/logo2.png" alt="">
+    </header>
+        <div class="music_container">
+            <h2 id="title">Sawali Si Raat</h2>
+            <h3 id="artist"> Barfi </h3>
+            <div class="img_container">
+                <img id="album" src="img/Barfi.jpg" alt="">
+            </div>
+            <audio src="music/Sawali.mp3"></audio>
+        <div class="music_controls">
+            <i class="fa fa-step-backward" id="prev" title="Prev"></i>
+            <i class="fa fa-play main_button" id="play" title="play"></i>
+            <i class="fa fa-step-forward" id="next" title="next"></i>       
+                </div> 
+                <div class="progressbar_container" id="progress_container">
+                    <div class="progress_duration_meter">
+                        <div id="current_time">00:00</div>
+                        <div class="progress_div" id="progress_div">
+                            <div class="progress" id="progress"></div>
+                        </div>
+                        <!-- <input type="range" min="1" max="100" value="0" class="seek" onchange="seekTo()"> -->
+                        <div id="duration">04:25</div>
+                        
+                    </div>                
+    </div>
+    </div>
+        <footer>
+                    <p>Created by Shubham  <a href="#"> <i class="fa fa-github"></i></a> </p>
+                </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
