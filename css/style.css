@@ -1,0 +1,190 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+
+}
+body {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    place-items: center;
+    background:url("../img/back.jpg");
+    background-size: cover;
+    overflow: hidden;
+}
+header h1{
+    display: block;
+    position: absolute;
+    top:0;
+    top:140rem;
+color:white;
+font-size: 30rem;
+}
+header img
+{ position: absolute;
+    top:0;
+    left:2rem;
+    width:10rem;
+    height:10rem;
+}
+/* Container */
+.music_container 
+{
+    margin-top:10vh;
+    background:url("../img/whatsapp-music-wallpaper.jpg");
+    background-size: cover;
+    width: 30rem;
+    height:53rem;
+    box-shadow:0 1.2rem 3rem .5rem rgba(0, 0, 0, 0.425);
+    border-radius: 20px;
+    text-align: center;
+}
+h2{
+    text-transform: uppercase;
+    word-spacing: .5rem;
+    color:white;
+    margin:2rem 0 0.5rem 0;
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.438);
+}
+
+h3 {
+    color:#cccaca;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    margin-bottom:4rem;
+    font-weight: 300;
+}
+#img_container
+{
+width:25rem;
+height:25rem;
+margin:auto;
+}
+
+/* MUSIC STYLE */
+.music_container img{
+    width: 25rem;
+    height:25rem;
+    object-fit: cover;
+    box-shadow: 0 1.2rem 3rem 0.5rem rgba(0,0,0,0.4);
+    border-radius:50%;
+}
+.music_controls{
+ width:20rem;
+ display: flex;
+ justify-content: space-between;
+ margin:auto;
+ margin-top:6rem;
+ align-items: center;
+}
+.music_controls .fa{
+    color: #111111;
+    font-size: 2rem;
+    cursor: pointer;
+    filter:drop-shadow(0 1.2rem 3rem 0.5rem rgba(0,0,0,0.4));
+
+}
+.music_controls .main_button{
+    width:5rem;
+    height:5rem;
+    border-radius: 50%;
+    background-color: #111111;
+    color:whitesmoke;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.music_controls .fa:hover{
+    color:grey;
+}
+.music_controls .fa-play:hover{
+    background-color: whitesmoke;
+    color:#111111;
+    box-shadow: 0 1rem 2rem 0.2rem rgba(0,0,0,0.4);
+}
+
+
+/* progress Style */
+.progressbar_container{
+    width:100%;
+    height:auto;
+    padding:1rem 0;
+    margin-top:1.5rem;
+    
+}
+.progress_div{
+    width:90%;
+    height:0.5rem;
+    margin:0 1rem;
+    background-color: rgba(0, 0, 0, 0.459);
+    border-radius: 4rem;
+    position: relative;
+    margin-top: 0.5rem;
+    transition: width 1s linear;
+    -moz-transition:width 1s linear;
+    -o-transition: width 1s linear;
+    -webkit-transition: width 1s linear;
+    cursor: pointer;
+    -webkit-appearance:none ;
+    appearance: none;
+}
+.progress{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 0%;
+    height:100%;
+    background-color: black;
+    border-radius: 4rem;
+    transition: width 1s linear;
+    -moz-transition:width 1s linear;
+    -o-transition: width 1s linear;
+    -webkit-transition: width 1s linear;
+    cursor: pointer;
+    -webkit-appearance:none ;
+    appearance: none;
+}
+.progress_duration_meter
+{
+    margin: 0 1rem;
+    display:flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 800;
+    color: rgb(10, 10, 12);
+}
+/* Footer */
+footer{
+    width: 100%;
+    font-size: 2rem;
+    color:rgb(255, 255, 255);
+    background:rgba(0, 0, 0, 0.521);
+    position: absolute;
+    bottom:0px;
+
+}
+footer .fa{
+    color: white;
+}
+footer .fa:hover{
+transform:scale(1.5);
+/* text-decoration: none; */
+}
+
+@media  (max-width: 768px){
+header img{
+    width:5rem;
+    height:5rem;
+
+}
+}
+/* Seek */
